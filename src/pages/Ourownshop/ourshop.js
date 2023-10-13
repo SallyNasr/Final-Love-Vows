@@ -9,20 +9,23 @@ import ban2 from '../../images/bannner2.png'
 import FetchCarousel from "../uploadProducts/fetchImagesCarousel";
 import ImageUploadForm from "../uploadProducts/ImageUploadForm";
 import uploadMultiImages from '../uploadProducts/uploadMultiImages';
+import DressThreeD from "../../3D shops/assets/importModel";
 
 export const OurShop = () => {
   return (
     <>
-      <Navigationbar />
+      {/* <Navigationbar />
 
       <img src={ban2} alt='banner-image1' style={{ position: "relative" }} height='65px' width='100%' />
-
       <div className="Ourshop">
         <div className="ourshopTitle">
-          <h1>Welcome to our own Shop</h1>
-          <uploadMultiImages/>
+          <h1>Welcome to our own Shop</h1> */}
+
+<DressThreeD/>
+
+          {/* <uploadMultiImages />
         </div>
-         <ImageUploadForm /> 
+        <ImageUploadForm />
         {uploadMultiImages}
         <FetchCarousel />
         <div className="ourproducts">
@@ -31,7 +34,7 @@ export const OurShop = () => {
           ))}
         </div>
       </div>
-      <Footer />
+      <Footer /> */}
     </>
   );
 };

@@ -1,0 +1,9 @@
+ 
+const Products=()=>(
+dresses=[
+    {"name": "dress1", "description": "A beautiful white dress for the bride to wear on her wedding day."},
+]
+
+}
+ 
+)

@@ -1,0 +1,92 @@
+.addshop-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    min-height: 100vh;
+    background-image: url('../images/background1.jpg');
+    background-repeat: none;
+    background-size: 100%;
+}
+
+.addshop-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    width: 450px;
+    margin: auto;
+    background-color: rgb(119, 119, 119);
+    color: white;
+}
+
+.addshop-form p {
+    font-size: 25px;
+    /* border: 1px solid black; */
+    margin: 0px;
+}
+
+.addshop-form label {
+    padding: 0px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.addshop-form input {
+    margin: 2px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgb(154, 154, 154);
+    font-size: 13px;
+}
+
+.addshop-form textarea {
+    margin: 2px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgb(154, 154, 154);
+    font-size: 13px;
+}
+
+.addshop-form input:focus {
+    outline: 2px solid rgb(0, 0, 0);
+    border: none;
+}
+
+.addshop-form button {
+    background-color: #acacae;
+    margin: 10px 0px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.addshop-form button:hover {
+    box-shadow: white;
+    color:rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+.success-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(229, 255, 228);
+    padding: 10px;
+    border-radius: 10px;
+    color: green;
+}
+
+.error-msg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(255, 228, 228);
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+}

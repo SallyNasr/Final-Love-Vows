@@ -1,0 +1,55 @@
+@import '../colors.css';
+
+.common-services {
+    display: flex;
+}
+
+.service-link-page p {
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-link-page p:hover {
+    color: #acacae;
+}
+
+.service-description {
+    color: rgb(72 89 95);
+    font-family: var(--text-font);
+}
+
+.common-services img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .common-services {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .common-services img {
+        display: none;
+    }
+
+    .service-link-page p {
+        color: var(--primary-color);
+        font-family: var(--title-font);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .service-link-page p:hover {
+        color: #acacae;
+    }
+
+    .service-description {
+        color: rgb(72 89 95);
+        font-family: var(--text-font);
+    }
+}

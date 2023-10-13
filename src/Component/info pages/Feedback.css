@@ -1,0 +1,127 @@
+/* FeedbackPage.css */
+
+.feedback-form {
+  width: 35%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #777777;
+}
+
+.feedback-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feedback-container {
+  background-image: url('/src/images/background1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  min-height: 100vh;
+  color: white;
+
+
+}
+
+.rating-section,
+.comments-section {
+  margin-bottom: 15px;
+}
+
+
+.comments-section label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+
+}
+
+.comments-section textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.comments-section textarea {
+  resize: vertical;
+}
+
+
+.name-feedback,
+.email-feedback,
+.feedback-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.submit-feedback {
+  background-color: #acacae;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 3px;
+  display: block;
+  margin: 3px auto;
+
+}
+
+.submit-feedback:hover {
+  background-color: #acacae;
+}
+
+
+/* StarRating.css */
+
+.star-rating {
+  /* display: flex;
+  justify-content: center; */
+  font-size: 36px;
+  align-items: center;
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+  margin-right: 5px;
+  font-size: 36px;
+  display: inline-block;
+
+}
+
+.star.active {
+  color: #ffcc00;
+  /* Change to your preferred active star color */
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .feedback-container {
+    background-repeat: repeat-y;
+  }
+  .feedback-form{
+    width: fit-content;
+  }
+}
+
+/* Media query for phones (up to 767px) */
+@media (max-width: 767px) {
+  .feedback-container {
+    background-repeat: repeat-y;
+    
+  }
+  .feedback-form{
+    width: fit-content;
+  }
+}

@@ -1,0 +1,41 @@
+.brides-link-page {
+    text-decoration: none;
+
+}
+
+.brides-shops {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bride-intro{
+    width: 75%;
+}
+
+/* Media query for tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+    .brides-shops {
+      flex-direction: column; /* Display as a column on tablets */
+      align-items: flex-start; /* Align items to the start of the column */
+    }
+  
+    .bride-intro {
+      width: 100%; /* Make the groom-intro section take up full width */
+    }
+  }
+  
+  /* Media query for phones (up to 767px) */
+  @media (max-width: 767px) {
+    .brides-shops {
+      flex-direction: column; /* Display as a column on phones */
+      align-items: flex-start; /* Align items to the start of the column */
+    }
+  
+    .bride-intro {
+      width: 100%; /* Make the groom-intro section take up full width */
+    }
+  }
+  
+  
+  

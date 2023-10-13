@@ -1,0 +1,54 @@
+@import "../../src/colors.css";
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+
+.main-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  .text-overlay {
+    position: absolute; 
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: var(--primary-color);
+    background-color: transparent;
+    padding: 10px 20px; 
+    z-index: 2; 
+  }
+
+  .banner-text {
+    font-size: 53px; 
+    font-weight: bold;
+    font-family:var(--title-font);
+    line-height: 1.2;
+    
+  }
+
+  .curve-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2; 
+  }
+  
+  @media (max-width: 767px) {
+    .banner-text {
+        font-size: 20px; 
+    }
+}
+
+
+
+
+
+

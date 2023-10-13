@@ -1,0 +1,124 @@
+@import '~font-awesome/css/font-awesome.css';
+
+.footer {
+  color: white;
+  background-color: rgb(119, 119, 119);
+  padding: 40px 0;
+  font-family: 'Old Standard TT', serif;
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  margin-bottom: -25px;
+}
+
+.footer-links {
+  list-style-type: none;
+  text-align: center !important;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  margin: 0 20px;
+}
+
+.footer-links a:hover {
+  color: #acacae;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  background-color: rgb(119, 119, 119);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer-links hr {
+  width: auto;
+  margin: 0 auto;
+  border: 1px solid white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: white;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.twitter-icon:hover {
+  color: #00acee;
+}
+
+.instagram-icon:hover {
+  color: #e1306c;
+}
+
+.facebook-icon:hover {
+  color: #1877f2;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  color: rgb(59, 59, 59);
+}
+
+/* Media query for tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+/* Media query for phones (up to 767px) */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

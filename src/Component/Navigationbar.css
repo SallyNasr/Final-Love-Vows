@@ -1,0 +1,119 @@
+.navbar {
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.2);
+}
+
+@import "../../src/colors.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Old+Standard+TT&family=Roboto:ital,wght@1,300&display=swap');
+
+.name {
+  font-size: 40px;
+  color: white;
+  font-family: var(--title-font);
+  text-align: left;
+  display: flex;
+  margin: 0px;
+  align-items: center;
+
+}
+
+.nav-link {
+  align-items: center;
+  min-width: -webkit-min-content;
+  font-display: swap;
+  margin-right: 10px;
+  color: white !important;
+}
+
+.links a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.profile-icon {
+  width: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-btn {
+  color: white;
+}
+
+/* responsive laltablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .links a {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+}
+
+/* lal phones (up to 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .links a {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .navbar-collapse {
+    /* background-image: url(../images/bannner2.png); */
+    /* background-repeat: round; */
+    color: black;
+  }
+}
+
+.coupon-nav .dropdown-item:hover {
+  color: white;
+  background-color: var(--text-color);
+}
+
+.coupon-nav .dropdown-item {
+  background-color: var(--button-color);
+  
+  color: var(--text-color);
+}
+
+.dropdown-menu.show {
+  padding: 0;
+}
+
+.dropdown-toggle::after{
+  
+  display: none !important;
+}
+.profile-nav .dropdown-item:hover {
+  color: white;
+  background-color: var(--text-color);
+}
+
+.profile-nav .dropdown-item {
+  background-color: var(--button-color);
+  
+  color: var(--text-color);
+}

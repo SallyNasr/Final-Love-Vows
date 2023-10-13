@@ -1,0 +1,81 @@
+/* Default styles outside of media queries */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Old+Standard+TT&family=Roboto:ital,wght@1,300&display=swap');
+
+@import '../colors.css';
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-attachment: fixed;
+  font-display: swap;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container-section {
+  /* scroll-snap-type: y mandatory; */
+  background-color: white;
+}
+
+section {
+  /* scroll-snap-align: start; */
+}
+
+.bride-section,
+.photographers,
+.spa,
+.groom-section {
+  margin: 30px;
+  padding: 5px;
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+.about-section h5 {
+  letter-spacing: 5px;
+  margin: 5px;
+  color: var(--primary-color);
+}
+
+.about-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.titleOfText {
+  color: var(--primary-color);
+  font-family: var(--title-font);
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  color: rgb(72 89 95);
+  font-family: var(--text-font);
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px (e.g., phones and smaller tablets) */
+
+  /* Adjust styles as needed for responsiveness */
+  .about-section {
+    width: 100%; /* Take up the full width */
+  }
+
+  .titleOfText {
+    font-size: 30px; /* Reduce font size for smaller screens */
+  }
+
+  p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+}

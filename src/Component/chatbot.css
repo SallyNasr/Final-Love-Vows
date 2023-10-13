@@ -1,0 +1,132 @@
+@import '../colors.css';
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid var(--text-color); 
+  border-radius: 10px; 
+  background-color: var(--button-color);
+  color: var(--primary-color); 
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  margin: 20px;
+  z-index: 1000; 
+  max-width: 300px; 
+  
+  overflow-y: auto;
+  cursor: pointer;
+  transition: height 0.3s ease;
+  overflow-y: scroll;
+  height: 300px;
+}
+.minimized{
+  height: unset !important;
+  overflow: unset !important;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 10px;
+  display: flex;
+  align-items: center; 
+}
+
+.message.User {
+  background-color: var(--white-color); 
+  color: var(--primary-color); 
+  border-top-right-radius: 0;
+}
+
+.message.Bot {
+  background-color: var(--white-color); 
+  color: var(--primary-color);  
+  border-top-left-radius: 0; 
+}
+
+.message.Bot::before {
+  content: '🤖'; 
+  display: inline-block;
+  width: 40px;
+  height: 40px; 
+  margin-right: 10px; 
+}
+
+.messageInput{
+  font-size: 14px;
+  font-family: var(--text-font);
+}
+.avatar-caption{
+   font-family: var(--title-font);
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid var(--text-color);
+  background-color: transparent; 
+}
+
+.chat-input input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: var(--text-font);
+  outline: none; 
+}
+
+.chat-input button[type="submit"] {
+  background-color: transparent; 
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px; 
+  color: var(--primary-color); 
+}
+
+.chat-input button[type="submit"] .MuiSvgIcon-root {
+  font-size: 24px; 
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+}
+
+.chat-icon {
+  cursor: pointer;
+}
+
+.cancel-button {
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+/* bas nza8er l chatbot */
+.bubble-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; 
+}
+
+.bubble-text p {
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--button-color); 
+  color: var(--primary-color); 
+  font-size: 16px;
+  font-family: var(--title-font);
+  font-weight: bold;
+}
+
+

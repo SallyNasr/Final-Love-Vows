@@ -1,0 +1,20 @@
+@import '../../colors.css';
+
+
+.allshoppage .heading  {
+    font-size: 40px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--title-font);
+}
+
+.allshoppage .allshopcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

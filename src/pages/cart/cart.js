@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../Ourownshop/shop-context";
-import { OURPRODUCTS } from "../../ourproducts";
+import { OURPRODUCTS } from "../../OURPRODUCTS";
 import { useNavigate } from "react-router-dom";
 import "./cart.css";
 import CartItem from "./cart-item";
@@ -27,7 +27,7 @@ export const Cart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p> Subtotal: ${totalAmount} </p>
-          <button onClick={() => navigate("/")}> Continue Shopping </button>
+          <button onClick={() => navigate("/ourshop")}> Continue Shopping </button>
           <button
             onClick={() => {
               checkout();

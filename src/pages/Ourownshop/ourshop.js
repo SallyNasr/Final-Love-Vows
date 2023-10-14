@@ -1,5 +1,5 @@
 import React from "react";
-import { OURPRODUCTS } from "../../ourproducts";
+import { OURPRODUCTS } from "../../OURPRODUCTS";
 import { Product } from "./ourproduct";
 import "./ourshop.css";
 import Navigationbar from "../../Component/Navigationbar";
@@ -7,9 +7,7 @@ import Footer from "../../Component/Footer";
 import ban2 from '../../images/bannner2.png'
 
 import FetchCarousel from "../uploadProducts/fetchImagesCarousel";
-import ImageUploadForm from "../uploadProducts/ImageUploadForm";
-import uploadMultiImages from '../uploadProducts/uploadMultiImages';
-import DressThreeD from "../../3D shops/importModel";
+
 
 
 export const OurShop = () => {
@@ -74,10 +72,7 @@ export const OurShop = () => {
           </div>
         </div>
 
-        {/* <uploadMultiImages /> */}
-
-        {/* <ImageUploadForm /> */}
-        {/* {uploadMultiImages} */}
+      
         <FetchCarousel />
         <div className="ourproducts">
           {OURPRODUCTS.map((product) => (

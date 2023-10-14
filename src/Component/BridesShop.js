@@ -51,11 +51,8 @@ const BridesShops = () => {
         <hr />
         <p>
           At Love & Vows, we understand that every bride is unique and deserves
-          to shine on her special day. That's why we've curated an exquisite
-          collection of bridal essentials to make your wedding dreams come true.
-          From the perfect wedding dress that will take your breath away to the
-          finishing touches that add elegance and grace, we have everything you
-          need to look and feel your absolute best.
+          to shine on her special day. That's why we have everything you need to
+          look and feel your absolute best.
         </p>
       </div>
       <div className="row bride-rows">

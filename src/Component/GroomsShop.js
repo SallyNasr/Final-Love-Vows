@@ -30,10 +30,8 @@ const GroomShops = () => {
         <h3 className="titleOfText">Welcome to our Groom Shop</h3>
         <hr />
         <p>
-          At Love & Vows, we understand that the groom deserves to look and feel
-          his best on the big day. That's why we've curated a carefully selected
-          collection of essentials to make sure every groom is impeccably
-          dressed and groomed from head to toe.
+          At Love & Vows, we ensure every groom looks and feels his best on the
+          big day with our thoughtfully chosen essentials
         </p>
       </div>
       <div className="row groom-rows">

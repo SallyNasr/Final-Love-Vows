@@ -78,12 +78,12 @@
   /* Media query for phones (up to 767px) */
   @media (max-width: 767px) {
     .groom-shops {
-      flex-direction: column; /* Display as a column on phones */
-      align-items: flex-start; /* Align items to the start of the column */
+      flex-direction: column; 
+      align-items: flex-start; 
     }
   
     .groom-intro {
-      width: 100%; /* Make the groom-intro section take up full width */
+      width: 100%; 
     }
   }
   

@@ -18,7 +18,5 @@ export const OURPRODUCTS = [
     productName: "Dress 3",
     price: 1799.0,
    
-  },
-
-
+  }
 ];

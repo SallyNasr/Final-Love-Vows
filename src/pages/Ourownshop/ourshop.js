@@ -1,5 +1,5 @@
 import React from "react";
-import { OURPRODUCTS } from "../../OURPRODUCTS";
+import { OURPRODUCTS } from "../../ourproducts";
 import { Product } from "./ourproduct";
 import "./ourshop.css";
 import Navigationbar from "../../Component/Navigationbar";
@@ -72,7 +72,7 @@ export const OurShop = () => {
           </div>
         </div>
 
-      
+
         <FetchCarousel />
         <div className="ourproducts">
           {OURPRODUCTS.map((product) => (

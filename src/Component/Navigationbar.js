@@ -183,7 +183,7 @@ const Navigationbar = () => {
             </Nav.Link>
 
             <NavDropdown
-              title={<div>Coupon<ArrowDropDownIcon/></div>}
+              title={<div>Coupon<ArrowDropDownIcon /></div>}
               id="basic-nav-dropdown"
               className="coupon-nav"
             >
@@ -277,16 +277,16 @@ const Navigationbar = () => {
               )}
             </li>
             {loggeduser ? (
-            
+              <div className="logout-btn">
                 <Nav onClick={handleLogout}>Logout</Nav>
-             
+              </div>
             ) : (
               <NavDropdown title={
                 <div className="profile-icon">
                   <PermIdentityIcon sx={{ fontSize: 30 }} style={{ color: "#ffffff", margin: "3" }} />
                 </div>
               }
-              className="profile-nav">
+                className="profile-nav">
                 <NavDropdown.Item href="/login">Login</NavDropdown.Item>
                 <NavDropdown.Item href="/signup">Signup</NavDropdown.Item>
               </NavDropdown>

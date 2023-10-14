@@ -2,7 +2,6 @@ import Home from "./Component/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoginForm from "./Registrations/LoginForm";
 import SignupForm from "./Registrations/SignupForm"
-import UserProfile from "./Component/UserProfile";
 import FeedbackPage from "./Component/info pages/Feedback";
 import TermsAndConditions from "./Component/info pages/TermsNCondition";
 import Privacy from "./Component/info pages/privacy";
@@ -65,7 +64,6 @@ function App() {
             <Route path="/Contact-us" element={<FeedbackPage />} />
             <Route path="/Login" element={<LoginForm />} />
             <Route path="/Signup" element={<SignupForm />} />
-            <Route path="/userprofile" element={<UserProfile />} />
             <Route path="/terms" element={<TermsAndConditions />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/sellshop" element={<Addshop />} />

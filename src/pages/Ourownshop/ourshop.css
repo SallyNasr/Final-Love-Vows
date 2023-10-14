@@ -1,14 +1,17 @@
 .ourshopTitle {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   font-size: 40px;
+  margin-bottom: 50px;
 }
+
 .ourproducts {
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  margin-bottom: 50px
 }
 
 .ourproduct {
@@ -50,4 +53,8 @@
   background-color: rgb(19, 19, 19);
   color: white;
   cursor: pointer;
+}
+
+.viewer .watermark a {
+  display: none;
 }

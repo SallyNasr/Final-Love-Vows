@@ -6,7 +6,6 @@ import Navigationbar from "../../Component/Navigationbar";
 import Footer from "../../Component/Footer";
 import ban2 from '../../images/bannner2.png'
 
-import FetchCarousel from "../uploadProducts/fetchImagesCarousel";
 
 
 
@@ -73,7 +72,7 @@ export const OurShop = () => {
         </div>
 
 
-        <FetchCarousel />
+     
         <div className="ourproducts">
           {OURPRODUCTS.map((product) => (
             <Product data={product} />

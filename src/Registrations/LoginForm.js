@@ -7,8 +7,6 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import KeyboardBackspaceSharpIcon from '@mui/icons-material/KeyboardBackspaceSharp';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import "../colors.css"
-
-
 import aud from '../images/zal8outa.mp3'
 
 const LoginForm = (props) => {
@@ -35,8 +33,6 @@ const LoginForm = (props) => {
     const handleLogin = (e) => {
         e.preventDefault();
        
-
-
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 setSuccessMsg('Logged in successfully,you will be redirected to the home page')

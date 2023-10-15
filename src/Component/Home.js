@@ -7,8 +7,6 @@ import Banner from "./Banner";
 import BridesShops from "./BridesShop";
 import GroomShops from "./GroomsShop";
 import Footer from "./Footer";
-
-// import { updateProfile } from "firebase/auth";
 import {
   collection,
   getDocs,

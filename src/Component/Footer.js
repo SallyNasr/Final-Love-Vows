@@ -1,12 +1,11 @@
 import React from "react";
-import "./Footer.css"; // Import your custom CSS for styling
+import "./Footer.css";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Link } from "react-router-dom";
 
 function Footer() {
-  // Function to scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -22,15 +21,10 @@ function Footer() {
             <Link to="/" onClick={scrollToTop}>
               Home
             </Link>{" "}
-            {/* Add a space after Home */}
             <a href="#about-us">About us </a>
-            {/* Add a space after About us */}
             <Link to="/terms">Terms & Conditions</Link>{" "}
-            {/* Add a space after Terms & Conditions */}
             <Link to="/privacy">Privacy policy</Link>{" "}
-            {/* Add a space after Privacy policy */}
             <Link to="/Contact-us">Contact us</Link>{" "}
-            {/* Add a space after Contact us */}
           </div>
         </div>
         <hr />

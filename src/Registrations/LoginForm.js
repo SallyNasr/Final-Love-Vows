@@ -34,6 +34,8 @@ const LoginForm = (props) => {
 
     const handleLogin = (e) => {
         e.preventDefault();
+       
+
 
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -48,7 +50,6 @@ const LoginForm = (props) => {
                 }, 2000);
             })
             .catch((error) => {
-
                 console.log(error.message);
                 if (error.message === 'Firebase: Error (auth/invalid-email).' || 'Firebase: Error (auth/missing-password).') {
                     setErrorMsg('Please fill all the required fields');
@@ -95,6 +96,7 @@ const LoginForm = (props) => {
                     </>}
 
                     <div className='login-form-control'>
+
                         <label For="email">Email</label>
                         <input
                             value={email}
@@ -132,7 +134,3 @@ const LoginForm = (props) => {
 };
 
 export default LoginForm;
-
-
-
-

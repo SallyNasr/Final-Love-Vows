@@ -97,7 +97,7 @@
   color: rgb(59, 59, 59);
 }
 
-/* Media query for tablets (768px - 1023px) */
+/* lal tablets (768px - 1023px) */
 @media (max-width: 1023px) {
   .footer-content {
     flex-direction: column;
@@ -110,7 +110,7 @@
   }
 }
 
-/* Media query for phones (up to 767px) */
+/* lal phones (up to 767px) */
 @media (max-width: 767px) {
   .footer-content {
     flex-direction: column;

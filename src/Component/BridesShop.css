@@ -13,27 +13,27 @@
     width: 75%;
 }
 
-/* Media query for tablets (768px - 1023px) */
+
 @media (max-width: 1023px) {
     .brides-shops {
-      flex-direction: column; /* Display as a column on tablets */
-      align-items: flex-start; /* Align items to the start of the column */
+      flex-direction: column; 
+      align-items: flex-start; 
     }
   
     .bride-intro {
-      width: 100%; /* Make the groom-intro section take up full width */
+      width: 100%; 
     }
   }
   
-  /* Media query for phones (up to 767px) */
+ 
   @media (max-width: 767px) {
     .brides-shops {
-      flex-direction: column; /* Display as a column on phones */
-      align-items: flex-start; /* Align items to the start of the column */
+      flex-direction: column; 
+      align-items: flex-start; 
     }
   
     .bride-intro {
-      width: 100%; /* Make the groom-intro section take up full width */
+      width: 100%; 
     }
   }
   

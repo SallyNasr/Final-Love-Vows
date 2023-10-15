@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SignupForm.css";
-import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate from react-router-dom
+import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { db, auth } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
@@ -46,7 +46,6 @@ const SignupForm = (props) => {
       );
       const user = userCredential.user;
 
-      // Create the user document in Firestore
       await addDoc(collection(db, "users"), {
         username: name,
         email: email,
@@ -109,7 +108,6 @@ const SignupForm = (props) => {
               <div className="success-msg">{successMsg}</div>
             </>
           )}
-
           {errorMsg && (
             <>
               <div className="error-msg">{errorMsg}</div>
@@ -138,6 +136,7 @@ const SignupForm = (props) => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
+
           <div className="reg-form-control">
             <label htmlFor="reg-password">Password</label>
             <input
@@ -149,8 +148,9 @@ const SignupForm = (props) => {
             />
             <span onClick={togglePasswordVisibility}>
               {showPassword ? <FaEyeSlash color="black" /> : <FaEye color="black" />}
-            </span></div>
-          {/* confirm password input */}
+            </span>
+          </div>
+
           <div className="reg-form-control">
             <label htmlFor="confirmPassword">Confirm Password</label>
             <input
@@ -158,12 +158,12 @@ const SignupForm = (props) => {
               placeholder="Confirm Password"
               value={confirmPassword}
               id="confirmPassword"
-              onChange={(e) => setConfirmPassword(e.target.value)}
-            />
+              onChange={(e) => setConfirmPassword(e.target.value)} />
             <span onClick={togglePasswordVisibility}>
               {showPassword ? <FaEyeSlash color="black" /> : <FaEye color="black" />}
             </span>
           </div>
+
           <button type="submit">Sign Up</button>
 
           <h6>
@@ -172,6 +172,7 @@ const SignupForm = (props) => {
               Login here.
             </Link>
           </h6>
+
         </form>
       </div>
     </>

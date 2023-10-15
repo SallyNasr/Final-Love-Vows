@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SignupForm.css";
-import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate from react-router-dom
+import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { db, auth } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
@@ -151,8 +151,6 @@ const SignupForm = (props) => {
             </span>
           </div>
 
-            </span></div>
-          
           <div className="reg-form-control">
             <label htmlFor="confirmPassword">Confirm Password</label>
             <input

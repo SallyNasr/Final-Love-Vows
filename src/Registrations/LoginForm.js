@@ -36,7 +36,7 @@ const LoginForm = (props) => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // console.log('Login clicked:', email, password);
+       
 
 
         signInWithEmailAndPassword(auth, email, password)
@@ -52,7 +52,7 @@ const LoginForm = (props) => {
                 }, 2000);
             })
             .catch((error) => {
-                // const errorCode = error.code;
+               
                 console.log(error.message);
                 if (error.message === 'Firebase: Error (auth/invalid-email).' || 'Firebase: Error (auth/missing-password).') {
                     setErrorMsg('Please fill all the required fields');
@@ -87,7 +87,7 @@ const LoginForm = (props) => {
                         <h2>Login</h2>
                     </div>
 
-                    {/* check the message if success or fail */}
+                  
                     {successMsg && <>
                         <div className='success-msg'>
                             {successMsg}
@@ -102,15 +102,7 @@ const LoginForm = (props) => {
 
                     <div className='login-form-control'>
 
-                        {/* <TextField
-                            id="email"
-                            label="Email"
-                            placeholder="Enter your email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            multiline
-
-                        /> */}
+                       
 
                         <label For="email">Email</label>
                         <input

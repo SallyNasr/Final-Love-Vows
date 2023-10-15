@@ -1,4 +1,4 @@
-/* Default styles outside of media queries */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Old+Standard+TT&family=Roboto:ital,wght@1,300&display=swap');
 
@@ -9,17 +9,15 @@ body {
   padding: 0px;
   background-attachment: fixed;
   font-display: swap;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 .container-section {
-  /* scroll-snap-type: y mandatory; */
+ 
   background-color: white;
 }
 
-section {
-  /* scroll-snap-align: start; */
-}
+
 
 .bride-section,
 .photographers,
@@ -64,18 +62,16 @@ p {
 /* Responsive Styles */
 
 @media (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px (e.g., phones and smaller tablets) */
-
-  /* Adjust styles as needed for responsiveness */
+  
   .about-section {
-    width: 100%; /* Take up the full width */
+    width: 100%; 
   }
 
   .titleOfText {
-    font-size: 30px; /* Reduce font size for smaller screens */
+    font-size: 30px; 
   }
 
   p {
-    font-size: 16px; /* Reduce font size for smaller screens */
+    font-size: 16px; 
   }
 }
